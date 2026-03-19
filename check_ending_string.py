@@ -20,3 +20,20 @@ def check_ending_string(target_string, suffix_string):
         
     # Kung hindi nag-match, ibig sabihin iba ang dulo niya
     return False
+# Function para i-test at patakbuhin yung ginawa nating logic sa taas
+def main_execution():
+    # Mag-set ng test string na gusto nating i-check
+    test_string = "computer engineering"
+    # Ito yung salita na inaasahan nating nasa dulo
+    target_suffix = "engineering"
+    
+    # Ipasa yung data dun sa custom function at i-save ang True/False na resulta
+    is_match = check_ending_string(test_string, target_suffix)
+    
+    # I-print ang original string at kung nag-match ba yung target suffix
+    print("\033[96mString:\033[0m '" + test_string + "'")
+    print("\033[92mEnds with target:\033[0m " + str(is_match))
+
+# Ito yung magsisilbing switch para umandar yung script
+if __name__ == "__main__":
+    main_execution()
